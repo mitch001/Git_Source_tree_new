@@ -2,10 +2,10 @@
 
 Option Explicit
 Const ForReading = 1
-strFolder = "C:\Users1"
-strDestination = "C:\Users1\sim"
+strFolder = "d:\1"
+strDestination = "d:\1\sim"
 Set fso = CreateObject("Scripting.FileSystemObject")
-Set objTextFile = fso.OpenTextFile _ ("c:\userss\file.txt", ForReading)
+Set objTextFile = fso.OpenTextFile _ ("d:\1\file.txt", ForReading)
 Do Until objTextFile.AtEndOfStream strFile = objTextFile.ReadLine Wscript.Echo strFile Loop
 objTextFile.Close
 
